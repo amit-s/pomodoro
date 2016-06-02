@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://www.dropbox.com/s/2l830ump7scem4w/jquery.flipcountdown.css?raw=1'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="container">
+  <div class="main">
+    
+    <div class=" bx pomodoro text-center" id="pomodoro">
+      <div id="box">
+
+      <h1>Pomodoro Clock</h1>
+   
+      <div class="row">
+        <div class="col-xs-6 bx">
+          <div id="break" class="bx">
+            <h3 class="text-center">Break</h3>
+            <h5>(minutes)</h5>
+            <div class="breakVal text-center bx">             
+              <button class="minus" id="minusB">-</button>
+              <span id="breakVal">5</span>
+              <button class="plus" id="plusB">+</button>            
+            </div> <!-- /#breakVal -->
+          </div> <!-- /#break -->
+        </div> <!-- /col-xs-6 -->
+        
+        <div class="col-xs-6 bx">
+          <div id="session" class="bx">
+            <h3 class="text-center">Session</h3>
+            <h5>(minutes)</h5>
+            <div class="sessionVal text-center bx">
+              <button class="minus" id="minusS">-</button>
+              <span id="sessionVal">15</span>
+              <button class="plus" id="plusS">+</button> 
+            </div> <!-- /#sessionVal -->            
+          </div> <!-- /#session -->
+        </div> <!-- /col-xs-6 -->
+      </div> <!-- /row -->
+      
+      <div class="row text-center">
+        <button id="start" class="">Start</button>
+      </div> <!-- /row -->
+
+      
+      <div class="row text-center">
+        <p class="sessionCount sessionHide">Sessions completed : <span id="sessionCount">1</span> </p>
+      </div> <!-- /row -->
+      </div> <!-- /#box -->
+      
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <div class="timer bx" id="timer">
+            <div id="timerVal" class="bx timerValVisibility text-center"></div>
+            <div id="timerProgress" class="bx" data-percent="100"></div>
+          </div> <!-- /timer -->
+        </div> <!-- /col-xs-12 -->
+      </div> <!-- /row -->
+    </div><!-- /clock -->
+    
+    <audio id="bell" src="https://www.dropbox.com/s/hizypsf1f2lip7o/Metal_Gong-Dianakc-109711828.mp3?raw=1"></audio>
+    
+  </div> <!-- /main -->
+</div> <!-- /container -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+<script src='https://www.dropbox.com/s/ilm3r0wnauyymua/jquery.easypiechart.js?raw=1'></script>
+<script src='https://www.dropbox.com/s/4n67dwvbdws02ow/jquery.flipcountdown.js?raw=1'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
