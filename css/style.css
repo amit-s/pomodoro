@@ -1,1 +1,93 @@
+bx{
+  border: 1px solid;
+}
 
+body{
+  background: rgb(0,0,0);
+}
+
+/*.container{
+  margin-top: 100px;
+}*/
+
+.container{
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+}
+
+#box{
+  background: rgba(20,20,20,1);
+  border-radius: 50px;  
+}
+
+h5{
+  margin-top: -5px;
+  display: none;
+}
+
+#timerVal{
+  position: relative;
+  top: 155px;
+  height: 56px;
+}
+
+.breakVal, .sessionVal{
+  font-size: 1.5em;
+}
+
+button.minus, button.plus{
+  border: none;
+  background: none;
+  outline: none;
+}
+
+#start{
+  font-size: 2em;
+  border: none;
+  outline: none;
+  background: none;
+  /*color: #008080;*/
+}
+
+.teal{
+  color: #008080;
+}
+
+.pink{
+  color: #FF69B4
+}
+
+.sessionCount{  
+  font-size: 1.3em;  
+}
+
+.sessionHide{
+  visibility: hidden;
+}
+
+@media only screen and (min-width : 480px){
+  #box{
+    width: 80%;
+    margin: auto;
+  }
+} /* /min-width : 480px */
+
+@media only screen and (min-width : 768px){
+  .breakVal, .sessionVal{
+    font-size: 2em;
+  }
+} /* /min-width:768px */
+
+@media only screen and (min-width : 992px){
+  #box{
+    width: 61%;
+    margin: auto;
+  }
+} /* /min-width : 992px */
+
+@media only screen and (min-width : 1200px){
+  #box{
+    width: 62%;
+    margin: auto;
+  }
+} /* /min-width : 1200px */
